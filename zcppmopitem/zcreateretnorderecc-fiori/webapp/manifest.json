@@ -1,0 +1,155 @@
+{
+  "_version": "1.48.0",
+  "sap.app": {
+    "id": "lumen.zcreateretneccoracleorder",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:lrop",
+      "version": "1.15.7",
+      "toolsId": "9c5f778f-7c36-4f92-acf1-592ba22bf234"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata4/sap/zotc_sb_retord_wrt_oraord/srvd/sap/zotc_sd_retord_wrt_oraord/0001/",
+        "type": "OData",
+        "settings": {
+          "annotations": [
+            "annotation"
+          ],
+          "localUri": "localService/metadata.xml",
+          "odataVersion": "4.0"
+        }
+      },
+      "annotation": {
+        "type": "ODataAnnotation",
+        "uri": "annotations/annotation.xml",
+        "settings": {
+          "localUri": "annotations/annotation.xml"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.108.31",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.fe.templates": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "lumen.zcreateretneccoracleorder.i18n.i18n"
+        }
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "synchronizationMode": "None",
+          "operationMode": "Server",
+          "autoExpandSelect": true,
+          "earlyRequests": true
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [
+        {
+          "pattern": ":?query:",
+          "name": "ZCDS_RETORD_WRT_ORAORDList",
+          "target": "ZCDS_RETORD_WRT_ORAORDList"
+        },
+        {
+          "pattern": "ZCDS_RETORD_WRT_ORAORD({key}):?query:",
+          "name": "ZCDS_RETORD_WRT_ORAORDObjectPage",
+          "target": "ZCDS_RETORD_WRT_ORAORDObjectPage"
+        }
+      ],
+      "targets": {
+        "ZCDS_RETORD_WRT_ORAORDList": {
+          "type": "Component",
+          "id": "ZCDS_RETORD_WRT_ORAORDList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/ZCDS_RETORD_WRT_ORAORD",
+              "variantManagement": "Page",
+              "navigation": {
+                "ZCDS_RETORD_WRT_ORAORD": {
+                  "detail": {
+                    "route": "ZCDS_RETORD_WRT_ORAORDObjectPage"
+                  }
+                }
+              },
+              "controlConfiguration": {
+                "@com.sap.vocabularies.UI.v1.LineItem": {
+                  "tableSettings": {
+                    "type": "ResponsiveTable",
+                    "enableMassEdit":true,
+                    "multiSelect":true,
+                    "selectAll": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ZCDS_RETORD_WRT_ORAORDObjectPage": {
+          "type": "Component",
+          "id": "ZCDS_RETORD_WRT_ORAORDObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/ZCDS_RETORD_WRT_ORAORD"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional"
+  }
+}

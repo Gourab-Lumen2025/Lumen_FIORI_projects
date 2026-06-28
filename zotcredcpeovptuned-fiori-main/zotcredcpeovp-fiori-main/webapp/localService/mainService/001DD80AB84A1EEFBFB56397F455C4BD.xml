@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="../../../sap/zz1_cpe_ordermgmt_q1_cds/$metadata">
+        <edmx:Include Namespace="ZZ1_CPE_ORDERMGMT_Q1_CDS"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema Namespace="001dd80ab84a1eefbfb56397f455c4bd.v1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.ZZ1_CPE_ORDERMGMT_Q1Type">
+                <Annotation Term="UI.DataPoint" Qualifier="7855479DA2CA45BAA5C1E28ED9662E16">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="Pending Shipment"/>
+                        <PropertyValue Property="Value" Path="RecordCount"/>
+                        <PropertyValue Property="ValueFormat">
+                            <Record>
+                                <PropertyValue Property="ScaleFactor" String=""/>
+                                <PropertyValue Property="NumberOfFractionalDigits" Int="0"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="CriticalityCalculation">
+                            <Record>
+                                <PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Minimize"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionVariant" Qualifier="7855479DA2CA45BAA5C1E28ED9662E16">
+                    <Record>
+                        <PropertyValue Property="ID" String="7855479DA2CA45BAA5C1E28ED9662E16"/>
+                        <PropertyValue Property="Text" String="Pending Shipment"/>
+                        <PropertyValue Property="SelectOptions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="PropertyName" PropertyPath="KPIFlag"/>
+                                    <PropertyValue Property="Ranges">
+                                        <Collection>
+                                            <Record>
+                                                <PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+                                                <PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/EQ"/>
+                                                <PropertyValue Property="Low" String="Pending Shipment"/>
+                                            </Record>
+                                        </Collection>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields" Qualifier="7855479DA2CA45BAA5C1E28ED9662E16">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.Identification" Qualifier="7855479DA2CA45BAA5C1E28ED9662E16">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="7855479DA2CA45BAA5C1E28ED9662E16_V_1740573971641">
+                    <Record>
+                        <PropertyValue Property="ID" String="V.1740573971641"/>
+                        <PropertyValue Property="Text" String="Pending Shipment Details"/>
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.LineItem#7855479DA2CA45BAA5C1E28ED9662E16_V_1740573971641</AnnotationPath>
+                                <AnnotationPath>@UI.DataPoint#7855479DA2CA45BAA5C1E28ED9662E16</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem" Qualifier="7855479DA2CA45BAA5C1E28ED9662E16_V_1740573971641">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="NetworkColor"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesDocument"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OriginalEOSDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Warehouse"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ReservedDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Stager"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Cradlepoint"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CPETech"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Expedite"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Note"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="E_1741604835676">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="Red CPE Sales Order Dashboard"/>
+                        <PropertyValue Property="Value" Path="RecordCount"/>
+                        <PropertyValue Property="ValueFormat">
+                            <Record>
+                                <PropertyValue Property="ScaleFactor" String=""/>
+                                <PropertyValue Property="NumberOfFractionalDigits" Int="0"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="CriticalityCalculation">
+                            <Record>
+                                <PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Minimize"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionVariant" Qualifier="E_1741604835676">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741604835676"/>
+                        <PropertyValue Property="Text" String="Complex"/>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields" Qualifier="E_1741604835676">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.Identification" Qualifier="E_1741604835676">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="E_1741604835676_V_1741605611346">
+                    <Record>
+                        <PropertyValue Property="ID" String="V.1741605611346"/>
+                        <PropertyValue Property="Text" String="Details"/>
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.LineItem#E_1741604835676_V_1741605611346</AnnotationPath>
+                                <AnnotationPath>@UI.DataPoint#E_1741604835676</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem" Qualifier="E_1741604835676_V_1741605611346">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CancellationFlag"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CPETech"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Cradlepoint"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OriginalEOSDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ExceptionDesc"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Expedite"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="NetworkColor"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Note"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Sourcing"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Stager"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Warehouse"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="E_1741609491138">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="Pending Shipment-Manual Config Details"/>
+                        <PropertyValue Property="Value" Path="RecordCount"/>
+                        <PropertyValue Property="ValueFormat">
+                            <Record>
+                                <PropertyValue Property="ScaleFactor" String=""/>
+                                <PropertyValue Property="NumberOfFractionalDigits" Int="0"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="CriticalityCalculation">
+                            <Record>
+                                <PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Minimize"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionVariant" Qualifier="E_1741609491138">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741609491138"/>
+                        <PropertyValue Property="Text" String=""/>
+                        <PropertyValue Property="SelectOptions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="PropertyName" PropertyPath="KPIFlag2"/>
+                                    <PropertyValue Property="Ranges">
+                                        <Collection>
+                                            <Record>
+                                                <PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+                                                <PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/EQ"/>
+                                                <PropertyValue Property="Low" String="PendingShipmentManualConfig"/>
+                                            </Record>
+                                        </Collection>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields" Qualifier="E_1741609491138">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.Identification" Qualifier="E_1741609491138">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="E_1741609491138_V_1741610028644">
+                    <Record>
+                        <PropertyValue Property="ID" String="V.1741610028644"/>
+                        <PropertyValue Property="Text" String="Pending Shipment-Manual Config Details"/>
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.LineItem#E_1741609491138_V_1741610028644</AnnotationPath>
+                                <AnnotationPath>@UI.DataPoint#E_1741609491138</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem" Qualifier="E_1741609491138_V_1741610028644">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="NetworkColor"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OriginalEOSDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CPETech"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Warehouse"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Cradlepoint"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Expedite"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Note"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ReservedDate"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="E_1741610336042">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="Expedites Not Shipped Details"/>
+                        <PropertyValue Property="Value" Path="RecordCount"/>
+                        <PropertyValue Property="ValueFormat">
+                            <Record>
+                                <PropertyValue Property="ScaleFactor" String=""/>
+                                <PropertyValue Property="NumberOfFractionalDigits" Int="0"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="CriticalityCalculation">
+                            <Record>
+                                <PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Minimize"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionVariant" Qualifier="E_1741610336042">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741610336042"/>
+                        <PropertyValue Property="Text" String=""/>
+                        <PropertyValue Property="SelectOptions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="PropertyName" PropertyPath="KPIFlag5"/>
+                                    <PropertyValue Property="Ranges">
+                                        <Collection>
+                                            <Record>
+                                                <PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+                                                <PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/EQ"/>
+                                                <PropertyValue Property="Low" String="ExpediteNotShipped"/>
+                                            </Record>
+                                        </Collection>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields" Qualifier="E_1741610336042">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.Identification" Qualifier="E_1741610336042">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="E_1741610336042_V_1741610511946">
+                    <Record>
+                        <PropertyValue Property="ID" String="V.1741610511946"/>
+                        <PropertyValue Property="Text" String="Expedites Not Shipped Details"/>
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.LineItem#E_1741610336042_V_1741610511946</AnnotationPath>
+                                <AnnotationPath>@UI.DataPoint#E_1741610336042</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem" Qualifier="E_1741610336042_V_1741610511946">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="NetworkColor"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CreationOn"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OriginalEOSDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Sourcing"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CPETech"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Expedite"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ReservedDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Warehouse"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="E_1741610807072">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="NotShippedandEOSDate5DaysorLess Details"/>
+                        <PropertyValue Property="Value" Path="RecordCount"/>
+                        <PropertyValue Property="ValueFormat">
+                            <Record>
+                                <PropertyValue Property="ScaleFactor" String=""/>
+                                <PropertyValue Property="NumberOfFractionalDigits" Int="0"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="CriticalityCalculation">
+                            <Record>
+                                <PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Minimize"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionVariant" Qualifier="E_1741610807072">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741610807072"/>
+                        <PropertyValue Property="Text" String=""/>
+                        <PropertyValue Property="SelectOptions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="PropertyName" PropertyPath="KPIFlag4"/>
+                                    <PropertyValue Property="Ranges">
+                                        <Collection>
+                                            <Record>
+                                                <PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+                                                <PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/EQ"/>
+                                                <PropertyValue Property="Low" String="NotShippedandEOSDate5DaysorLess"/>
+                                            </Record>
+                                        </Collection>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields" Qualifier="E_1741610807072">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.Identification" Qualifier="E_1741610807072">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="E_1741610807072_V_1741611058622">
+                    <Record>
+                        <PropertyValue Property="ID" String="V.1741611058622"/>
+                        <PropertyValue Property="Text" String="NotShippedandEOSDate5DaysorLess Details"/>
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.LineItem#E_1741610807072_V_1741611058622</AnnotationPath>
+                                <AnnotationPath>@UI.DataPoint#E_1741610807072</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem" Qualifier="E_1741610807072_V_1741611058622">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="NetworkColor"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CreationOn"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OriginalEOSDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Sourcing"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CPETech"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Expedite"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ReservedDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Warehouse"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="E_1741611396717">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="Complex Sourcing Errors Details"/>
+                        <PropertyValue Property="Value" Path="RecordCount"/>
+                        <PropertyValue Property="ValueFormat">
+                            <Record>
+                                <PropertyValue Property="ScaleFactor" String=""/>
+                                <PropertyValue Property="NumberOfFractionalDigits" Int="0"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="CriticalityCalculation">
+                            <Record>
+                                <PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Minimize"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionVariant" Qualifier="E_1741611396717">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741611396717"/>
+                        <PropertyValue Property="Text" String=""/>
+                        <PropertyValue Property="SelectOptions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="PropertyName" PropertyPath="KPIFlag3"/>
+                                    <PropertyValue Property="Ranges">
+                                        <Collection>
+                                            <Record>
+                                                <PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+                                                <PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/EQ"/>
+                                                <PropertyValue Property="Low" String="ComplexSourcingErrors"/>
+                                            </Record>
+                                        </Collection>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields" Qualifier="E_1741611396717">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.Identification" Qualifier="E_1741611396717">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="E_1741611396717_V_1741611620150">
+                    <Record>
+                        <PropertyValue Property="ID" String="V.1741611620150"/>
+                        <PropertyValue Property="Text" String="Complex Sourcing Errors Details"/>
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.LineItem#E_1741611396717_V_1741611620150</AnnotationPath>
+                                <AnnotationPath>@UI.DataPoint#E_1741611396717</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem" Qualifier="E_1741611396717_V_1741611620150">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="NetworkColor"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CreationOn"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OriginalEOSDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Sourcing"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SourcingDesc"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Expedite"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="E_1742206228415">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="ShipTrackExcp_OR_NotDel7Days"/>
+                        <PropertyValue Property="Value" Path="RecordCount"/>
+                        <PropertyValue Property="ValueFormat">
+                            <Record>
+                                <PropertyValue Property="ScaleFactor" String=""/>
+                                <PropertyValue Property="NumberOfFractionalDigits" Int="0"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="CriticalityCalculation">
+                            <Record>
+                                <PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Minimize"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionVariant" Qualifier="E_1742206228415">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1742206228415"/>
+                        <PropertyValue Property="Text" String="Count"/>
+                        <PropertyValue Property="SelectOptions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="PropertyName" PropertyPath="KPIFlag6"/>
+                                    <PropertyValue Property="Ranges">
+                                        <Collection>
+                                            <Record>
+                                                <PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+                                                <PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/EQ"/>
+                                                <PropertyValue Property="Low" String="ShipTrackExcpORNotDel7Days"/>
+                                            </Record>
+                                        </Collection>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields" Qualifier="E_1742206228415">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.Identification" Qualifier="E_1742206228415">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="E_1742206228415_V_1742207454326">
+                    <Record>
+                        <PropertyValue Property="ID" String="V.1742207454326"/>
+                        <PropertyValue Property="Text" String="ShipTrackExcp_OR_NotDel7Days Details"/>
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.LineItem#E_1742206228415_V_1742207454326</AnnotationPath>
+                                <AnnotationPath>@UI.DataPoint#E_1742206228415</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem" Qualifier="E_1742206228415_V_1742207454326">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CPETech"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OriginalEOSDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ExceptionDesc"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ShippedDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TrackingNumber"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Warehouse"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="E_1741607045621">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="Pending Shipment Details"/>
+                        <PropertyValue Property="Value" Path="Totalcount_PendingShipmentMax"/>
+                        <PropertyValue Property="ValueFormat">
+                            <Record>
+                                <PropertyValue Property="ScaleFactor" String=""/>
+                                <PropertyValue Property="NumberOfFractionalDigits" Int="0"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="CriticalityCalculation">
+                            <Record>
+                                <PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Minimize"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionVariant" Qualifier="E_1741607045621">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741607045621"/>
+                        <PropertyValue Property="Text" String=""/>
+                        <PropertyValue Property="SelectOptions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="PropertyName" PropertyPath="KPIFlag"/>
+                                    <PropertyValue Property="Ranges">
+                                        <Collection>
+                                            <Record>
+                                                <PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+                                                <PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/EQ"/>
+                                                <PropertyValue Property="Low" String="Pending Shipment"/>
+                                            </Record>
+                                        </Collection>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionFields" Qualifier="E_1741607045621">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.Identification" Qualifier="E_1741607045621">
+                    <Collection/>
+                </Annotation>
+                <Annotation Term="UI.PresentationVariant" Qualifier="E_1741607045621_V_1741607339941">
+                    <Record>
+                        <PropertyValue Property="ID" String="V.1741607339941"/>
+                        <PropertyValue Property="Text" String="Pending Shipment Details"/>
+                        <PropertyValue Property="Visualizations">
+                            <Collection>
+                                <AnnotationPath>@UI.LineItem#E_1741607045621_V_1741607339941</AnnotationPath>
+                                <AnnotationPath>@UI.DataPoint#E_1741607045621</AnnotationPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.LineItem" Qualifier="E_1741607045621_V_1741607339941">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CustomerName"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="NetworkColor"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="SalesOrder"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OriginalEOSDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Warehouse"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ReservedDate"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Stager"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="CPETech"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Cradlepoint"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Expedite"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Note"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.KPI" Qualifier="E_1740561532021">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1740561532021"/>
+                        <PropertyValue Property="SelectionVariant" Path="@UI.SelectionVariant#E_1740561532021"/>
+                        <PropertyValue Property="DataPoint" Path="@UI.DataPoint#E_1740561532021"/>
+                        <PropertyValue Property="Detail">
+                            <Record Type="UI.KPIDetailType">
+                                <PropertyValue Property="DefaultPresentationVariant" Path="@UI.PresentationVariant#7855479DA2CA45BAA5C1E28ED9662E16_V_1740573971641"/>
+                                <PropertyValue Property="AlternativePresentationVariants">
+                                    <Collection/>
+                                </PropertyValue>
+                                <PropertyValue Property="SemanticObject" String="REDCPE11"/>
+                                <PropertyValue Property="Action" String="analyze"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.DataPoint" Qualifier="E_1740561532021">
+                    <Record Type="UI.DataPointType">
+                        <PropertyValue Property="Title" String="Red CPE Sales Order Dashboard"/>
+                        <PropertyValue Property="Value" Path="RecordCount"/>
+                        <PropertyValue Property="ValueFormat">
+                            <Record>
+                                <PropertyValue Property="ScaleFactor" String=""/>
+                                <PropertyValue Property="NumberOfFractionalDigits" Int="0"/>
+                            </Record>
+                        </PropertyValue>
+                        <PropertyValue Property="CriticalityCalculation">
+                            <Record>
+                                <PropertyValue Property="ImprovementDirection" EnumMember="UI.ImprovementDirectionType/Minimize"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.SelectionVariant" Qualifier="E_1740561532021">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1740561532021"/>
+                        <PropertyValue Property="Text" String="Pending Shipment"/>
+                        <PropertyValue Property="SelectOptions">
+                            <Collection>
+                                <Record>
+                                    <PropertyValue Property="PropertyName" PropertyPath="KPIFlag"/>
+                                    <PropertyValue Property="Ranges">
+                                        <Collection>
+                                            <Record>
+                                                <PropertyValue Property="Sign" EnumMember="UI.SelectionRangeSignType/I"/>
+                                                <PropertyValue Property="Option" EnumMember="UI.SelectionRangeOptionType/EQ"/>
+                                                <PropertyValue Property="Low" String="Pending Shipment"/>
+                                            </Record>
+                                        </Collection>
+                                    </PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.KPI" Qualifier="E_1741604835676">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741604835676"/>
+                        <PropertyValue Property="SelectionVariant" Path="@UI.SelectionVariant#E_1741604835676"/>
+                        <PropertyValue Property="DataPoint" Path="@UI.DataPoint#E_1741604835676"/>
+                        <PropertyValue Property="Detail">
+                            <Record Type="UI.KPIDetailType">
+                                <PropertyValue Property="DefaultPresentationVariant" Path="@UI.PresentationVariant#E_1741604835676_V_1741605611346"/>
+                                <PropertyValue Property="AlternativePresentationVariants">
+                                    <Collection/>
+                                </PropertyValue>
+                                <PropertyValue Property="SemanticObject" String="ZREDCPE13"/>
+                                <PropertyValue Property="Action" String="analyze"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.KPI" Qualifier="E_1741609491138">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741609491138"/>
+                        <PropertyValue Property="SelectionVariant" Path="@UI.SelectionVariant#E_1741609491138"/>
+                        <PropertyValue Property="DataPoint" Path="@UI.DataPoint#E_1741609491138"/>
+                        <PropertyValue Property="Detail">
+                            <Record Type="UI.KPIDetailType">
+                                <PropertyValue Property="DefaultPresentationVariant" Path="@UI.PresentationVariant#E_1741609491138_V_1741610028644"/>
+                                <PropertyValue Property="AlternativePresentationVariants">
+                                    <Collection/>
+                                </PropertyValue>
+                                <PropertyValue Property="SemanticObject" String="ZREDCPE2"/>
+                                <PropertyValue Property="Action" String="analyze"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.KPI" Qualifier="E_1741610336042">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741610336042"/>
+                        <PropertyValue Property="SelectionVariant" Path="@UI.SelectionVariant#E_1741610336042"/>
+                        <PropertyValue Property="DataPoint" Path="@UI.DataPoint#E_1741610336042"/>
+                        <PropertyValue Property="Detail">
+                            <Record Type="UI.KPIDetailType">
+                                <PropertyValue Property="DefaultPresentationVariant" Path="@UI.PresentationVariant#E_1741610336042_V_1741610511946"/>
+                                <PropertyValue Property="AlternativePresentationVariants">
+                                    <Collection/>
+                                </PropertyValue>
+                                <PropertyValue Property="SemanticObject" String="ZREDCPE6"/>
+                                <PropertyValue Property="Action" String="analyze"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.KPI" Qualifier="E_1741610807072">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741610807072"/>
+                        <PropertyValue Property="SelectionVariant" Path="@UI.SelectionVariant#E_1741610807072"/>
+                        <PropertyValue Property="DataPoint" Path="@UI.DataPoint#E_1741610807072"/>
+                        <PropertyValue Property="Detail">
+                            <Record Type="UI.KPIDetailType">
+                                <PropertyValue Property="DefaultPresentationVariant" Path="@UI.PresentationVariant#E_1741610807072_V_1741611058622"/>
+                                <PropertyValue Property="AlternativePresentationVariants">
+                                    <Collection/>
+                                </PropertyValue>
+                                <PropertyValue Property="SemanticObject" String="ZREDCPE7"/>
+                                <PropertyValue Property="Action" String="analyze"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.KPI" Qualifier="E_1741611396717">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741611396717"/>
+                        <PropertyValue Property="SelectionVariant" Path="@UI.SelectionVariant#E_1741611396717"/>
+                        <PropertyValue Property="DataPoint" Path="@UI.DataPoint#E_1741611396717"/>
+                        <PropertyValue Property="Detail">
+                            <Record Type="UI.KPIDetailType">
+                                <PropertyValue Property="DefaultPresentationVariant" Path="@UI.PresentationVariant#E_1741611396717_V_1741611620150"/>
+                                <PropertyValue Property="AlternativePresentationVariants">
+                                    <Collection/>
+                                </PropertyValue>
+                                <PropertyValue Property="SemanticObject" String="ZREDCPE8"/>
+                                <PropertyValue Property="Action" String="analyze"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.KPI" Qualifier="E_1742206228415">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1742206228415"/>
+                        <PropertyValue Property="SelectionVariant" Path="@UI.SelectionVariant#E_1742206228415"/>
+                        <PropertyValue Property="DataPoint" Path="@UI.DataPoint#E_1742206228415"/>
+                        <PropertyValue Property="Detail">
+                            <Record Type="UI.KPIDetailType">
+                                <PropertyValue Property="DefaultPresentationVariant" Path="@UI.PresentationVariant#E_1742206228415_V_1742207454326"/>
+                                <PropertyValue Property="AlternativePresentationVariants">
+                                    <Collection/>
+                                </PropertyValue>
+                                <PropertyValue Property="SemanticObject" String="ZREDCPE14"/>
+                                <PropertyValue Property="Action" String="analyze"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation Term="UI.KPI" Qualifier="E_1741607045621">
+                    <Record>
+                        <PropertyValue Property="ID" String="E.1741607045621"/>
+                        <PropertyValue Property="SelectionVariant" Path="@UI.SelectionVariant#E_1741607045621"/>
+                        <PropertyValue Property="DataPoint" Path="@UI.DataPoint#E_1741607045621"/>
+                        <PropertyValue Property="Detail">
+                            <Record Type="UI.KPIDetailType">
+                                <PropertyValue Property="DefaultPresentationVariant" Path="@UI.PresentationVariant#E_1741607045621_V_1741607339941"/>
+                                <PropertyValue Property="AlternativePresentationVariants">
+                                    <Collection/>
+                                </PropertyValue>
+                                <PropertyValue Property="SemanticObject" String="ZREDCPE1"/>
+                                <PropertyValue Property="Action" String="analyze"/>
+                            </Record>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.CustomerCategory"/>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.Product"/>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.CustomerName"/>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.CustomerNameResult"/>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.ReferenceSDDocumentCategory"/>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.ReferenceSDDocumentCategoryResult"/>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.ODataQueryAdditionalMetadata"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

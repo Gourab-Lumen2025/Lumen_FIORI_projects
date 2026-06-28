@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:Reference Uri=".1/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+    </edmx:Reference>
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZZ1_CPE_ORDERMGMT_Q1_CDS" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+            <EntityType Name="ZZ1_CPE_ORDERMGMT_Q1Type" sap:label="Red CPE Order Management Report" sap:semantics="aggregate" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" Nullable="false" sap:filterable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="TotaledProperties" Type="Edm.String" sap:aggregation-role="totaled-properties-list" sap:is-annotation="true" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CustomerName" Type="Edm.String" MaxLength="100" sap:aggregation-role="dimension" sap:label="Customer Name" sap:creatable="false" sap:updatable="false" sap:value-list="standard"/>
+                <Property Name="CustomerOrder" Type="Edm.String" MaxLength="60" sap:aggregation-role="dimension" sap:label="Customer Order" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="NetworkColor" Type="Edm.String" MaxLength="15" sap:aggregation-role="dimension" sap:label="Network Color" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Salesdocument" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:label="Salesdocument" sap:quickinfo="Sales Document" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="OriginalEOSDate" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:label="Original EOS Date" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Sourcing" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:label="Sourcing" sap:quickinfo="AUTOSOURCE_STATUS" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="SourcingDesc" Type="Edm.String" MaxLength="60" sap:aggregation-role="dimension" sap:label="Sourcing Description" sap:quickinfo="AUTOSOURCE_STATUS (Desc.)" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Warehouse" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:label="Warehouse" sap:quickinfo="Warehouse Number / Warehouse Complex" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="WarehouseName" Type="Edm.String" MaxLength="25" sap:aggregation-role="dimension" sap:label="Warehouse Description" sap:quickinfo="Warehouse Number Description" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ReservedDate" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:label="Reserved Date" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CPETech" Type="Edm.String" MaxLength="12" sap:aggregation-role="dimension" sap:label="CPE Tech" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CPETechName" Type="Edm.String" MaxLength="80" sap:aggregation-role="dimension" sap:label="CPE Tech Name" sap:quickinfo="Full Name of Person" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Stager" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:label="Stager" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Cradlepoint" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:label="Cradlepoint" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CancellationFlag" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:label="Cancelled" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Expedite" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:label="Expedite" sap:quickinfo="Special Processing Indicator" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ExpediteCodeName" Type="Edm.String" MaxLength="40" sap:aggregation-role="dimension" sap:label="Expedite Description" sap:quickinfo="Description" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ExceptionDesc" Type="Edm.String" MaxLength="255" sap:aggregation-role="dimension" sap:label="Exception" sap:quickinfo="ExceptionDesc" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CustomerCategory" Type="Edm.String" MaxLength="28" sap:aggregation-role="dimension" sap:filter-restriction="single-value" sap:required-in-filter="false" sap:label="Customer Category" sap:creatable="false" sap:updatable="false" sap:value-list="standard"/>
+                <Property Name="EOSDate" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:label="EOS Date" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CreationOn" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:label="Creation On" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ParentOrder" Type="Edm.String" MaxLength="60" sap:aggregation-role="dimension" sap:label="Parent Order" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ManualConfigaration" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:label="Manual Configaration" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="EndCustomerName" Type="Edm.String" MaxLength="100" sap:aggregation-role="dimension" sap:label="End Customer Name" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ReturanLabel" Type="Edm.String" MaxLength="3" sap:aggregation-role="dimension" sap:label="Returan Label" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="SalesDocumentRjcnReason" Type="Edm.String" MaxLength="2" sap:aggregation-role="dimension" sap:label="Sales Document Rjcn Reason" sap:quickinfo="Reason for Rejection of Sales Documents" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ReferenceSDDocumentCategory" Type="Edm.String" MaxLength="4" sap:aggregation-role="dimension" sap:label="Reference SD Document Category" sap:quickinfo="Document Category of Preceding SD Document" sap:creatable="false" sap:updatable="false" sap:value-list="standard"/>
+                <Property Name="ShippedDate" Type="Edm.String" MaxLength="10" sap:aggregation-role="dimension" sap:label="Shipped Date" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TrackingNumber" Type="Edm.String" MaxLength="35" sap:aggregation-role="dimension" sap:label="Tracking Number" sap:quickinfo="Bill of Lading" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ActivityType" Type="Edm.String" MaxLength="25" sap:aggregation-role="dimension" sap:label="Activity Type" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Product" Type="Edm.String" MaxLength="100" sap:aggregation-role="dimension" sap:filter-restriction="single-value" sap:required-in-filter="false" sap:label="Product" sap:creatable="false" sap:updatable="false" sap:value-list="standard"/>
+                <Property Name="CreatedBy" Type="Edm.String" MaxLength="12" sap:aggregation-role="dimension" sap:label="Created By" sap:quickinfo="Created By User" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="KPIFlag" Type="Edm.String" MaxLength="16" sap:aggregation-role="dimension" sap:label="KPIFlag" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="KPIFlag2" Type="Edm.String" MaxLength="27" sap:aggregation-role="dimension" sap:label="KPIFlag2" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="KPIFlag3" Type="Edm.String" MaxLength="21" sap:aggregation-role="dimension" sap:label="KPIFlag3" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="KPIFlag4" Type="Edm.String" MaxLength="31" sap:aggregation-role="dimension" sap:label="KPIFlag4" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="KPIFlag5" Type="Edm.String" MaxLength="18" sap:aggregation-role="dimension" sap:label="KPIFlag5" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="KPIFlag6" Type="Edm.String" MaxLength="26" sap:aggregation-role="dimension" sap:label="KPIFlag6" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="KPIFlag7" Type="Edm.String" MaxLength="21" sap:aggregation-role="dimension" sap:label="KPIFlag7" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Note" Type="Edm.String" MaxLength="200" sap:aggregation-role="dimension" sap:label="Note" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ProjectID" Type="Edm.String" MaxLength="200" sap:aggregation-role="dimension" sap:label="Project ID" sap:quickinfo="Project Id" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="ContractTerm" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="ContractTerm_F" sap:updatable="false" sap:label="Contract Term" sap:creatable="false"/>
+                <Property Name="ContractTerm_F" Type="Edm.String" MaxLength="60" sap:label="Contract Term (Formatted)" sap:quickinfo="Contract Term" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="MontlyRecurringRevenue" Type="Edm.Decimal" Precision="42" Scale="2" sap:aggregation-role="measure" sap:filterable="false" sap:text="MontlyRecurringRevenue_F" sap:updatable="false" sap:label="MontlyRecurringRevenue" sap:creatable="false"/>
+                <Property Name="MontlyRecurringRevenue_F" Type="Edm.String" MaxLength="60" sap:label="MontlyRecurringRevenue (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="Pending_shipment_KF" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="Pending_shipment_KF_F" sap:updatable="false" sap:label="Pending_shipment_KF" sap:creatable="false"/>
+                <Property Name="Pending_shipment_KF_F" Type="Edm.String" MaxLength="60" sap:label="Pending_shipment_KF (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="PendingShipmentManualConfig_KF" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="PendingShipmentManualConfig_KF_F" sap:updatable="false" sap:label="PendingShipmentManualConfig_KF" sap:creatable="false"/>
+                <Property Name="PendingShipmentManualConfig_KF_F" Type="Edm.String" MaxLength="60" sap:label="PendingShipmentManualConfig_KF (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="ExpediteNotShipped_KF" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="ExpediteNotShipped_KF_F" sap:updatable="false" sap:label="ExpediteNotShipped_KF" sap:creatable="false"/>
+                <Property Name="ExpediteNotShipped_KF_F" Type="Edm.String" MaxLength="60" sap:label="ExpediteNotShipped_KF (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="ComplexSourcingErrors_KF" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="ComplexSourcingErrors_KF_F" sap:updatable="false" sap:label="ComplexSourcingErrors_KF" sap:creatable="false"/>
+                <Property Name="ComplexSourcingErrors_KF_F" Type="Edm.String" MaxLength="60" sap:label="ComplexSourcingErrors_KF (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="ShipTrackExcpORNotDel7Days_KF" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="ShipTrackExcpORNotDel7Days_KF_F" sap:updatable="false" sap:label="ShipTrackExcpORNotDel7Days_KF" sap:creatable="false"/>
+                <Property Name="ShipTrackExcpORNotDel7Days_KF_F" Type="Edm.String" MaxLength="60" sap:label="ShipTrackExcpORNotDel7Days_KF (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="NotShipdandEOS5DaysorLess_KF" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="NotShipdandEOS5DaysorLess_KF_F" sap:updatable="false" sap:label="NotShipdandEOS5DaysorLess_KF" sap:creatable="false"/>
+                <Property Name="NotShipdandEOS5DaysorLess_KF_F" Type="Edm.String" MaxLength="60" sap:label="NotShipdandEOS5DaysorLess_KF (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="ManualUpdtSalesOrdReq_KF" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="ManualUpdtSalesOrdReq_KF_F" sap:updatable="false" sap:label="ManualUpdtSalesOrdReq_KF" sap:creatable="false"/>
+                <Property Name="ManualUpdtSalesOrdReq_KF_F" Type="Edm.String" MaxLength="60" sap:label="ManualUpdtSalesOrdReq_KF (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <Property Name="ExpediteNotShipped_KF1" Type="Edm.Decimal" Precision="42" Scale="0" sap:aggregation-role="measure" sap:filterable="false" sap:text="ExpediteNotShipped_KF1_F" sap:updatable="false" sap:label="ExpediteNotShipped_KF1" sap:creatable="false"/>
+                <Property Name="ExpediteNotShipped_KF1_F" Type="Edm.String" MaxLength="60" sap:label="ExpediteNotShipped_KF1 (Formatted)" sap:creatable="false" sap:updatable="false" sap:filterable="false"/>
+                <NavigationProperty Name="CustomerCategoryDetails" Relationship="ZZ1_CPE_ORDERMGMT_Q1_CDS.CustomerCategoryToListOfValues" FromRole="ToRole_CustomerCategoryToListOfValues" ToRole="FromRole_CustomerCategoryToListOfValues"/>
+                <NavigationProperty Name="ProductDetails" Relationship="ZZ1_CPE_ORDERMGMT_Q1_CDS.ProductToListOfValues" FromRole="ToRole_ProductToListOfValues" ToRole="FromRole_ProductToListOfValues"/>
+            </EntityType>
+            <EntityType Name="CustomerCategory" sap:label="Customer Category" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CustomerCategory"/>
+                </Key>
+                <Property Name="CustomerCategory" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="CustomerCategoryText" sap:label="Customer Category" sap:sortable="false"/>
+                <Property Name="CustomerCategoryText" Type="Edm.String" MaxLength="60" sap:label="Customer Category (Description) " sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="Product" sap:label="Product" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Product"/>
+                </Key>
+                <Property Name="Product" Type="Edm.String" Nullable="false" sap:parameter="optional" sap:text="ProductText" sap:label="Product" sap:sortable="false"/>
+                <Property Name="ProductText" Type="Edm.String" MaxLength="60" sap:label="Product (Description) " sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <EntityType Name="CustomerName" sap:label="Customer Name (Master Data)" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CustomerName_ID"/>
+                </Key>
+                <Property Name="CustomerName_ID" Type="Edm.String" Nullable="false" MaxLength="100" sap:label="Customer Name" sap:creatable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityType Name="CustomerNameResult" sap:label="Customer Name (Booked Data)" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CustomerName"/>
+                </Key>
+                <Property Name="CustomerName" Type="Edm.String" Nullable="false" MaxLength="100" sap:label="Customer Name" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="CustomerOrder" Type="Edm.String" MaxLength="60" sap:label="Customer Order" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="NetworkColor" Type="Edm.String" MaxLength="15" sap:label="Network Color" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Salesdocument" Type="Edm.String" MaxLength="10" sap:label="Salesdocument" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="OriginalEOSDate" Type="Edm.String" MaxLength="10" sap:label="Original EOS Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Sourcing" Type="Edm.String" MaxLength="4" sap:label="Sourcing" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="SourcingDesc" Type="Edm.String" MaxLength="60" sap:label="Sourcing Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Warehouse" Type="Edm.String" MaxLength="3" sap:label="Warehouse" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="WarehouseName" Type="Edm.String" MaxLength="25" sap:label="Warehouse Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ReservedDate" Type="Edm.String" MaxLength="10" sap:label="Reserved Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CPETech" Type="Edm.String" MaxLength="12" sap:label="CPE Tech" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CPETechName" Type="Edm.String" MaxLength="80" sap:label="CPE Tech Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Stager" Type="Edm.String" MaxLength="3" sap:label="Stager" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Cradlepoint" Type="Edm.String" MaxLength="3" sap:label="Cradlepoint" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CancellationFlag" Type="Edm.String" MaxLength="3" sap:label="Cancelled" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Expedite" Type="Edm.String" MaxLength="4" sap:label="Expedite" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ExpediteCodeName" Type="Edm.String" MaxLength="40" sap:label="Expedite Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ExceptionDesc" Type="Edm.String" MaxLength="255" sap:label="Exception" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CustomerCategory" Type="Edm.String" MaxLength="28" sap:label="Customer Category" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="EOSDate" Type="Edm.String" MaxLength="10" sap:label="EOS Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CreationOn" Type="Edm.String" MaxLength="10" sap:label="Creation On" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ParentOrder" Type="Edm.String" MaxLength="60" sap:label="Parent Order" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ManualConfigaration" Type="Edm.String" MaxLength="3" sap:label="Manual Configaration" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="EndCustomerName" Type="Edm.String" MaxLength="100" sap:label="End Customer Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ReturanLabel" Type="Edm.String" MaxLength="3" sap:label="Returan Label" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="SalesDocumentRjcnReason" Type="Edm.String" MaxLength="2" sap:label="Sales Document Rjcn Reason" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ReferenceSDDocumentCategory" Type="Edm.String" MaxLength="4" sap:label="Reference SD Document Category" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ShippedDate" Type="Edm.String" MaxLength="10" sap:label="Shipped Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="TrackingNumber" Type="Edm.String" MaxLength="35" sap:label="Tracking Number" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ActivityType" Type="Edm.String" MaxLength="25" sap:label="Activity Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Product" Type="Edm.String" MaxLength="100" sap:label="Product" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CreatedBy" Type="Edm.String" MaxLength="12" sap:label="Created By" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag" Type="Edm.String" MaxLength="16" sap:label="KPIFlag" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag2" Type="Edm.String" MaxLength="27" sap:label="KPIFlag2" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag3" Type="Edm.String" MaxLength="21" sap:label="KPIFlag3" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag4" Type="Edm.String" MaxLength="31" sap:label="KPIFlag4" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag5" Type="Edm.String" MaxLength="18" sap:label="KPIFlag5" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag6" Type="Edm.String" MaxLength="26" sap:label="KPIFlag6" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag7" Type="Edm.String" MaxLength="21" sap:label="KPIFlag7" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Note" Type="Edm.String" MaxLength="200" sap:label="Note" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ProjectID" Type="Edm.String" MaxLength="200" sap:label="Project ID" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+            </EntityType>
+            <EntityType Name="ReferenceSDDocumentCategory" sap:label="Reference SD Document Category (Master Data)" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ReferenceSDDocumentCategory_ID"/>
+                </Key>
+                <Property Name="ReferenceSDDocumentCategory_ID" Type="Edm.String" Nullable="false" MaxLength="4" sap:text="ReferenceSDDocumentCategoryText" sap:label="Reference SD Document Category" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ReferenceSDDocumentCategoryText" Type="Edm.String" sap:label="Reference SD Document Category (Description)" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+            </EntityType>
+            <EntityType Name="ReferenceSDDocumentCategoryResult" sap:label="Reference SD Document Category (Booked Data)" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ReferenceSDDocumentCategory"/>
+                </Key>
+                <Property Name="ReferenceSDDocumentCategory" Type="Edm.String" Nullable="false" MaxLength="4" sap:label="Reference SD Document Category" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CustomerName" Type="Edm.String" MaxLength="100" sap:label="Customer Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CustomerOrder" Type="Edm.String" MaxLength="60" sap:label="Customer Order" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="NetworkColor" Type="Edm.String" MaxLength="15" sap:label="Network Color" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Salesdocument" Type="Edm.String" MaxLength="10" sap:label="Salesdocument" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="OriginalEOSDate" Type="Edm.String" MaxLength="10" sap:label="Original EOS Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Sourcing" Type="Edm.String" MaxLength="4" sap:label="Sourcing" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="SourcingDesc" Type="Edm.String" MaxLength="60" sap:label="Sourcing Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Warehouse" Type="Edm.String" MaxLength="3" sap:label="Warehouse" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="WarehouseName" Type="Edm.String" MaxLength="25" sap:label="Warehouse Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ReservedDate" Type="Edm.String" MaxLength="10" sap:label="Reserved Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CPETech" Type="Edm.String" MaxLength="12" sap:label="CPE Tech" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CPETechName" Type="Edm.String" MaxLength="80" sap:label="CPE Tech Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Stager" Type="Edm.String" MaxLength="3" sap:label="Stager" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Cradlepoint" Type="Edm.String" MaxLength="3" sap:label="Cradlepoint" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CancellationFlag" Type="Edm.String" MaxLength="3" sap:label="Cancelled" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Expedite" Type="Edm.String" MaxLength="4" sap:label="Expedite" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ExpediteCodeName" Type="Edm.String" MaxLength="40" sap:label="Expedite Description" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ExceptionDesc" Type="Edm.String" MaxLength="255" sap:label="Exception" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CustomerCategory" Type="Edm.String" MaxLength="28" sap:label="Customer Category" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="EOSDate" Type="Edm.String" MaxLength="10" sap:label="EOS Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CreationOn" Type="Edm.String" MaxLength="10" sap:label="Creation On" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ParentOrder" Type="Edm.String" MaxLength="60" sap:label="Parent Order" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ManualConfigaration" Type="Edm.String" MaxLength="3" sap:label="Manual Configaration" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="EndCustomerName" Type="Edm.String" MaxLength="100" sap:label="End Customer Name" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ReturanLabel" Type="Edm.String" MaxLength="3" sap:label="Returan Label" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="SalesDocumentRjcnReason" Type="Edm.String" MaxLength="2" sap:label="Sales Document Rjcn Reason" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ShippedDate" Type="Edm.String" MaxLength="10" sap:label="Shipped Date" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="TrackingNumber" Type="Edm.String" MaxLength="35" sap:label="Tracking Number" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ActivityType" Type="Edm.String" MaxLength="25" sap:label="Activity Type" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Product" Type="Edm.String" MaxLength="100" sap:label="Product" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="CreatedBy" Type="Edm.String" MaxLength="12" sap:label="Created By" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag" Type="Edm.String" MaxLength="16" sap:label="KPIFlag" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag2" Type="Edm.String" MaxLength="27" sap:label="KPIFlag2" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag3" Type="Edm.String" MaxLength="21" sap:label="KPIFlag3" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag4" Type="Edm.String" MaxLength="31" sap:label="KPIFlag4" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag5" Type="Edm.String" MaxLength="18" sap:label="KPIFlag5" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag6" Type="Edm.String" MaxLength="26" sap:label="KPIFlag6" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="KPIFlag7" Type="Edm.String" MaxLength="21" sap:label="KPIFlag7" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Note" Type="Edm.String" MaxLength="200" sap:label="Note" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="ProjectID" Type="Edm.String" MaxLength="200" sap:label="Project ID" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+            </EntityType>
+            <EntityType Name="ODataQueryAdditionalMetadata" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ODataQueryMetadata"/>
+                </Key>
+                <Property Name="ODataQueryMetadata" Type="Edm.String" Nullable="false" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ODataQueryMetadataValue_Current" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="ODataQueryMetadataValueAtDefine" Type="Edm.String" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <Association Name="CustomerCategoryToListOfValues" sap:content-version="1">
+                <End Type="ZZ1_CPE_ORDERMGMT_Q1_CDS.CustomerCategory" Multiplicity="1" Role="FromRole_CustomerCategoryToListOfValues"/>
+                <End Type="ZZ1_CPE_ORDERMGMT_Q1_CDS.ZZ1_CPE_ORDERMGMT_Q1Type" Multiplicity="*" Role="ToRole_CustomerCategoryToListOfValues"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_CustomerCategoryToListOfValues">
+                        <PropertyRef Name="CustomerCategory"/>
+                    </Principal>
+                    <Dependent Role="ToRole_CustomerCategoryToListOfValues">
+                        <PropertyRef Name="CustomerCategory"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <Association Name="ProductToListOfValues" sap:content-version="1">
+                <End Type="ZZ1_CPE_ORDERMGMT_Q1_CDS.Product" Multiplicity="1" Role="FromRole_ProductToListOfValues"/>
+                <End Type="ZZ1_CPE_ORDERMGMT_Q1_CDS.ZZ1_CPE_ORDERMGMT_Q1Type" Multiplicity="*" Role="ToRole_ProductToListOfValues"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_ProductToListOfValues">
+                        <PropertyRef Name="Product"/>
+                    </Principal>
+                    <Dependent Role="ToRole_ProductToListOfValues">
+                        <PropertyRef Name="Product"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="ZZ1_CPE_ORDERMGMT_Q1_CDS_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="Product" EntityType="ZZ1_CPE_ORDERMGMT_Q1_CDS.Product" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="CustomerName" EntityType="ZZ1_CPE_ORDERMGMT_Q1_CDS.CustomerName" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="CustomerNameResults" EntityType="ZZ1_CPE_ORDERMGMT_Q1_CDS.CustomerNameResult" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ReferenceSDDocumentCategory" EntityType="ZZ1_CPE_ORDERMGMT_Q1_CDS.ReferenceSDDocumentCategory" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ReferenceSDDocumentCategoryResults" EntityType="ZZ1_CPE_ORDERMGMT_Q1_CDS.ReferenceSDDocumentCategoryResult" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="AdditionalMetadata" EntityType="ZZ1_CPE_ORDERMGMT_Q1_CDS.ODataQueryAdditionalMetadata" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="ZZ1_CPE_ORDERMGMT_Q1" EntityType="ZZ1_CPE_ORDERMGMT_Q1_CDS.ZZ1_CPE_ORDERMGMT_Q1Type" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="CustomerCategory" EntityType="ZZ1_CPE_ORDERMGMT_Q1_CDS.CustomerCategory" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <AssociationSet Name="CustomerCategoryToListOfValues_AssocSet" Association="ZZ1_CPE_ORDERMGMT_Q1_CDS.CustomerCategoryToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="CustomerCategory" Role="FromRole_CustomerCategoryToListOfValues"/>
+                    <End EntitySet="ZZ1_CPE_ORDERMGMT_Q1" Role="ToRole_CustomerCategoryToListOfValues"/>
+                </AssociationSet>
+                <AssociationSet Name="ProductToListOfValues_AssocSet" Association="ZZ1_CPE_ORDERMGMT_Q1_CDS.ProductToListOfValues" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="Product" Role="FromRole_ProductToListOfValues"/>
+                    <End EntitySet="ZZ1_CPE_ORDERMGMT_Q1" Role="ToRole_ProductToListOfValues"/>
+                </AssociationSet>
+            </EntityContainer>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.ZZ1_CPE_ORDERMGMT_Q1Type/CustomerCategory" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Customer Category"/>
+                        <PropertyValue Property="CollectionPath" String="CustomerCategory"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="CustomerCategory"/>
+                                    <PropertyValue Property="ValueListProperty" String="CustomerCategory"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="CustomerCategoryText"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.ZZ1_CPE_ORDERMGMT_Q1Type/Product" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Product"/>
+                        <PropertyValue Property="CollectionPath" String="Product"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Product"/>
+                                    <PropertyValue Property="ValueListProperty" String="Product"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="ProductText"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.ZZ1_CPE_ORDERMGMT_Q1Type/CustomerName" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Customer Name ( Master Data )"/>
+                        <PropertyValue Property="CollectionPath" String="CustomerName"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="CustomerName"/>
+                                    <PropertyValue Property="ValueListProperty" String="CustomerName_ID"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="CustomerNameText"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="ZZ1_CPE_ORDERMGMT_Q1_CDS.ZZ1_CPE_ORDERMGMT_Q1Type/ReferenceSDDocumentCategory" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Reference SD Document Category ( Master Data )"/>
+                        <PropertyValue Property="CollectionPath" String="ReferenceSDDocumentCategory"/>
+                        <PropertyValue Property="SearchSupported" Bool="false"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="ReferenceSDDocumentCategory"/>
+                                    <PropertyValue Property="ValueListProperty" String="ReferenceSDDocumentCategory_ID"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="ReferenceSDDocumentCategoryText"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <atom:link rel="self" href="https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZZ1_CPE_ORDERMGMT_Q1_CDS/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZZ1_CPE_ORDERMGMT_Q1_CDS/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

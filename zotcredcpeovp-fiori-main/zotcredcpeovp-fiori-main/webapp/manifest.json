@@ -1,0 +1,364 @@
+{
+  "_version": "1.48.0",
+  "sap.app": {
+    "id": "lumen.zotcredcpeovp",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:ovp",
+      "version": "1.15.7",
+      "toolsId": "8aadd926-aee8-4c4b-9f54-f01dfb115623"
+    },
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata/sap/ZZ1_CPE_ORDERMGMT_Q1_CDS/",
+        "type": "OData",
+        "settings": {
+          "annotations": [
+            "ZZ1_CPE_ORDERMGMT_Q1_CDS_VAN",
+            "001DD80AB84A1EEFBFB5F0AB3BCC64BD",
+            "001DD80AB84A1EEFBFB56397F455C4BD",
+            "001DD80896341FE080E339DFC09BC533",
+            "001DD80896341EEFBFB5C40DD83A2532",
+            "001DD80896341EEFBFB59F4BC651A532",
+            "001DD80896341EEFBFB4AE3A05F08532",
+            "001DD80896341EEFBFB42C7FB405C532",
+            "001DD80896341EEFBD8585DBA3654532",
+            "annotation"
+          ],
+          "localUri": "localService/mainService/metadata.xml",
+          "odataVersion": "2.0"
+        }
+      },
+      "ZZ1_CPE_ORDERMGMT_Q1_CDS_VAN": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZZ1_CPE_ORDERMGMT_Q1_CDS_VAN',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/ZZ1_CPE_ORDERMGMT_Q1_CDS_VAN.xml"
+        }
+      },
+      "annotation": {
+        "type": "ODataAnnotation",
+        "uri": "annotations/annotation.xml",
+        "settings": {
+          "localUri": "annotations/annotation.xml"
+        }
+      },
+      "001DD80896341EEFBD8585DBA3654532": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBD8585DBA3654532',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/001DD80896341EEFBD8585DBA3654532.xml"
+        }
+      },
+      "001DD80896341EEFBFB42C7FB405C532": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBFB42C7FB405C532',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/001DD80896341EEFBFB42C7FB405C532.xml"
+        }
+      },
+      "001DD80896341EEFBFB4AE3A05F08532": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBFB4AE3A05F08532',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/001DD80896341EEFBFB4AE3A05F08532.xml"
+        }
+      },
+      "001DD80AB84A1EEFBFB56397F455C4BD": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80AB84A1EEFBFB56397F455C4BD',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/001DD80AB84A1EEFBFB56397F455C4BD.xml"
+        }
+      },
+      "001DD80896341EEFBFB59F4BC651A532": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBFB59F4BC651A532',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/001DD80896341EEFBFB59F4BC651A532.xml"
+        }
+      },
+      "001DD80896341EEFBFB5C40DD83A2532": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBFB5C40DD83A2532',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/001DD80896341EEFBFB5C40DD83A2532.xml"
+        }
+      },
+      "001DD80AB84A1EEFBFB5F0AB3BCC64BD": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80AB84A1EEFBFB5F0AB3BCC64BD',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/001DD80AB84A1EEFBFB5F0AB3BCC64BD.xml"
+        }
+      },
+      "001DD80896341FE080E339DFC09BC533": {
+        "uri": "/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341FE080E339DFC09BC533',Version='0001')/$value/",
+        "type": "ODataAnnotation",
+        "settings": {
+          "localUri": "localService/mainService/001DD80896341FE080E339DFC09BC533.xml"
+        }
+      }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "zredcpeovp-display": {
+          "semanticObject": "zredcpeovp",
+          "action": "display",
+          "title": "{{flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.108.28",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.ushell": {},
+        "sap.f": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ovp": {},
+        "sap.ui.rta": {},
+        "sap.ui.layout": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "lumen.zotcredcpeovp.i18n.i18n"
+        }
+      },
+      "mainModel": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "refreshAfterChange": false,
+          "metadataUrlParams": {
+            "sap-value-list": "none"
+          }
+        }
+      },
+      "mainModel1": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "refreshAfterChange": false,
+          "metadataUrlParams": {
+            "sap-value-list": "none"
+          }
+        }
+      },
+      "mainModel2": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "refreshAfterChange": false,
+          "metadataUrlParams": {
+            "sap-value-list": "none"
+          }
+        }
+      },
+      "mainModel3": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "refreshAfterChange": false,
+          "metadataUrlParams": {
+            "sap-value-list": "none"
+          }
+        }
+      },
+      "mainModel4": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {
+          "defaultBindingMode": "TwoWay",
+          "defaultCountMode": "Inline",
+          "refreshAfterChange": false,
+          "metadataUrlParams": {
+            "sap-value-list": "none"
+          }
+        }
+      },
+      "@i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "uri": "i18n/i18n.properties"
+      },
+      "": {
+        "dataSource": "mainService",
+        "preload": true,
+        "settings": {}
+      }
+    },
+    "resources": {
+      "css": []
+    },
+    "routing": {
+      "config": {},
+      "routes": [],
+      "targets": {}
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.ovp.app.Main": {
+            "controllerName": "lumen.zotcredcpeovp.ext.controller.OverViewPageExt"
+          }
+        }
+      }
+    }
+  },
+  "sap.ovp": {
+    "globalFilterModel": "mainModel",
+    "containerLayout": "resizable",
+    "enableLiveFilter": true,
+    "considerAnalyticalParameters": false,
+    "cards": {
+      "card_expnotshipped": {
+        "template": "sap.ovp.cards.table",
+        "model": "mainModel",
+        "settings": {
+          "entitySet": "ZZ1_CPE_ORDERMGMT_Q1",
+          "title": "Expedites Not Shipped",
+          "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#LI_QF",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Iden_QF",
+          "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#DP_QF",
+          "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SV_QF",
+          "addODataSelect": true
+        }
+      },
+      "card_eosdatenotshipped": {
+        "template": "sap.ovp.cards.table",
+        "model": "mainModel1",
+        "settings": {
+          "entitySet": "ZZ1_CPE_ORDERMGMT_Q1",
+          "title": "Not Shipped and EOS Date 5 Days or Less",
+          "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#LI2_QF",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Iden2_QF",
+          "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#DP2_QF",
+          "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SV2_QF",
+          "addODataSelect": true
+        }
+      },
+      "card_complexerrors": {
+        "template": "sap.ovp.cards.table",
+        "model": "mainModel1",
+        "settings": {
+          "entitySet": "ZZ1_CPE_ORDERMGMT_Q1",
+          "title": "Complex Sourcing Errors",
+          "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#LI3_QF",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Iden3_QF",
+          "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#DP3_QF",
+          "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SV3_QF",
+          "addODataSelect": true
+        }
+      },
+      "card_pendingshipment": {
+        "template": "sap.ovp.cards.table",
+        "model": "mainModel2",
+        "settings": {
+          "entitySet": "ZZ1_CPE_ORDERMGMT_Q1",
+          "title": "Pending Shipment",
+          "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#LI4_QF",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Iden4_QF",
+          "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#DP4_QF",
+          "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SV4_QF",
+          "addODataSelect": true
+        }
+      },
+      "card_pendingshipmentmanualconfig": {
+        "template": "sap.ovp.cards.table",
+        "model": "mainModel3",
+        "settings": {
+          "entitySet": "ZZ1_CPE_ORDERMGMT_Q1",
+          "title": "Pending Shipment - Manual Config",
+          "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#LI5_QF",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Iden5_QF",
+          "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#DP5_QF",
+          "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SV5_QF",
+          "addODataSelect": true
+        }
+      },
+      "card_shiptracking": {
+        "template": "sap.ovp.cards.table",
+        "model": "mainModel4",
+        "settings": {
+          "entitySet": "ZZ1_CPE_ORDERMGMT_Q1",
+          "title": "Shipment Tracking Exceptions or Not Delivered in 7 Days",
+          "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#LI6_QF",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Iden6_QF",
+          "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#DP6_QF",
+          "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SV6_QF",
+          "addODataSelect": true
+        }
+      },
+      "card_manualupdate": {
+        "template": "sap.ovp.cards.table",
+        "model": "mainModel2",
+        "settings": {
+          "entitySet": "ZZ1_CPE_ORDERMGMT_Q1",
+          "title": "Manual Update of Sales Orders Required",
+          "annotationPath": "com.sap.vocabularies.UI.v1.LineItem#LI7_QF",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification#Iden7_QF",
+          "dataPointAnnotationPath": "com.sap.vocabularies.UI.v1.DataPoint#DP7_QF",
+          "selectionAnnotationPath": "com.sap.vocabularies.UI.v1.SelectionVariant#SV7_QF",
+          "addODataSelect": true
+        }
+      }
+    },
+    "chartSettings": {},
+    "globalFilterEntitySet": "ZZ1_CPE_ORDERMGMT_Q1",
+    "dataLoadSettings": {
+      "loadDataOnAppLaunch": "always"
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "analytical"
+  }
+}

@@ -1,0 +1,268 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_PROJ('1281')",
+                    "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_PROJ('1281')",
+                    "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_PROJType"
+                },
+                "Salesdocument": "1281",
+                "to_ActivityTab": {
+                    "results": []
+                },
+                "to_Tab1": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB1('1281')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB1('1281')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB1Type"
+                            },
+                            "Request": "1281",
+                            "CaseNum": "",
+                            "SubCase": "",
+                            "OrderDate": "\/Date(1745958403000+0000)\/",
+                            "Originator": "",
+                            "Analyst": "Ronald Woods",
+                            "CloseDate": null,
+                            "ClosureCode": "",
+                            "Cancellation": "False"
+                        }
+                    ]
+                },
+                "to_Tab10": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB10('1281')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB10('1281')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB10Type"
+                            },
+                            "SalesDocument": "1281",
+                            "RMAVendor": "LUMBEE RIVER EMC LUMBER Name 2",
+                            "RMANumber": "",
+                            "EscalationDate": "",
+                            "ResponseDate": "",
+                            "RMANotes": ""
+                        }
+                    ]
+                },
+                "to_Tab2": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB2('1281')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB2('1281')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB2Type"
+                            },
+                            "SalesDocument": "1281",
+                            "ReturnType": "Standard",
+                            "ProcInd": "",
+                            "Material": "100006951",
+                            "NoReplacement": "False",
+                            "TestSet": "True",
+                            "Excepton": "",
+                            "ClarifyPR": ""
+                        }
+                    ]
+                },
+                "to_Tab3": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB3('1281')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB3('1281')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB3Type"
+                            },
+                            "SalesDocument": "1281",
+                            "Owner": "",
+                            "PartNumber": "100006951",
+                            "SupplierPart": "81.5517A6951",
+                            "Supplier": "ACES",
+                            "MaterialDescription": "MATMANTOS4",
+                            "OriginalPart": "81.5517A6951",
+                            "StorageLocation": "SPAR",
+                            "SalesOrganization": "1002"
+                        }
+                    ]
+                },
+                "to_Tab4": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB4('1281')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB4('1281')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB4Type"
+                            },
+                            "SalesDocument": "1281",
+                            "Urgency": "Same Day DtD",
+                            "DateNeeded": "2025-04-29",
+                            "C2CAirport": "new york airport98",
+                            "C2CWaybill": "",
+                            "ReplacementWarehouse": "1002 - UPS - BEND, OR SPAR"
+                        }
+                    ]
+                },
+                "to_Tab5": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB5('1281')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB5('1281')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB5Type"
+                            },
+                            "SalesDocument": "1281",
+                            "ShipToSiteName": "CONVERGIA, INC FL QCC-FP-MTU",
+                            "Address": "2350 NE 2nd Street",
+                            "City": "BEND",
+                            "Region": "ON",
+                            "PostalCode": "A7B 1C1",
+                            "FieldTechName": " Shridhar Kaparthy",
+                            "FieldTechEmail": "1234578",
+                            "PhoneNumber": "+1 900 8998788"
+                        }
+                    ]
+                },
+                "to_Tab6": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB6('1281')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB6('1281')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB6Type"
+                            },
+                            "SalesDocument": "1281",
+                            "FailureSiteName": "CONVERGIA, INC FL QCC-FP-MTU",
+                            "TID": "",
+                            "Reason": "SLA Reason new",
+                            "NetworkStatusCode": "Z05",
+                            "NetworkStatus": "ZRE:Two Pos for same line",
+                            "GCRDate": ""
+                        }
+                    ]
+                },
+                "to_Tab7": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB7(SalesDocument='1281',Type='Replacement')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB7(SalesDocument='1281',Type='Replacement')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB7Type"
+                            },
+                            "SalesDocument": "1281",
+                            "Type": "Replacement",
+                            "OrderType": "RP",
+                            "PO": "1281",
+                            "Carrier": "123@carr",
+                            "Waybill": "Test@123890",
+                            "LabelCreated": null,
+                            "ETA": "\/Date(1762872180000+0000)\/",
+                            "Shipped": "\/Date(1746108056000+0000)\/",
+                            "Received": "\/Date(1763131380000+0000)\/",
+                            "SignedBy": "",
+                            "Closed": null,
+                            "DeliveryDoc": "80002419",
+                            "KVGR3": "01"
+                        },
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB7(SalesDocument='1281',Type='Return')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB7(SalesDocument='1281',Type='Return')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB7Type"
+                            },
+                            "SalesDocument": "1281",
+                            "Type": "Return",
+                            "OrderType": "RT",
+                            "PO": "60002116",
+                            "Carrier": "",
+                            "Waybill": "1Z2239WVXT62406532",
+                            "LabelCreated": null,
+                            "ETA": null,
+                            "Shipped": "\/Date(1746101520000+0000)\/",
+                            "Received": "\/Date(1746101520000+0000)\/",
+                            "SignedBy": "",
+                            "Closed": "\/Date(1746101520000+0000)\/",
+                            "DeliveryDoc": "",
+                            "KVGR3": "01"
+                        },
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB7(SalesDocument='1281',Type='Repair')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB7(SalesDocument='1281',Type='Repair')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB7Type"
+                            },
+                            "SalesDocument": "1281",
+                            "Type": "Repair",
+                            "OrderType": "RE",
+                            "PO": "",
+                            "Carrier": "",
+                            "Waybill": "",
+                            "LabelCreated": null,
+                            "ETA": null,
+                            "Shipped": "\/Date(1746549844000+0000)\/",
+                            "Received": null,
+                            "SignedBy": "",
+                            "Closed": null,
+                            "DeliveryDoc": "80002461",
+                            "KVGR3": "01"
+                        },
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB7(SalesDocument='1281',Type='Vendor%20Return')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB7(SalesDocument='1281',Type='Vendor%20Return')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB7Type"
+                            },
+                            "SalesDocument": "1281",
+                            "Type": "Vendor Return",
+                            "OrderType": "VR",
+                            "PO": "",
+                            "Carrier": "",
+                            "Waybill": "",
+                            "LabelCreated": null,
+                            "ETA": null,
+                            "Shipped": null,
+                            "Received": null,
+                            "SignedBy": "",
+                            "Closed": null,
+                            "DeliveryDoc": "",
+                            "KVGR3": "01"
+                        }
+                    ]
+                },
+                "to_Tab8": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB8('1281')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB8('1281')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB8Type"
+                            },
+                            "SalesDocument": "1281",
+                            "VendorAnalysis": "True",
+                            "VendorCase": "",
+                            "PurchaseVendor": "",
+                            "PurchaseOrder": ""
+                        }
+                    ]
+                },
+                "to_Tab9": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB9('1281')",
+                                "uri": "https://NS2WD1APP1.SAPERP.CORP.INTRANET:44301/sap/opu/odata/sap/ZOTC_SPARES_DASHBOARD_PROJ_CDS/ZOTC_SPARES_DASHBOARD_TAB9('1281')",
+                                "type": "ZOTC_SPARES_DASHBOARD_PROJ_CDS.ZOTC_SPARES_DASHBOARD_TAB9Type"
+                            },
+                            "SalesDocument": "1281",
+                            "MaterialControlTag": "Spares - Bad: D.O.A",
+                            "DefectiveSerialNum": "",
+                            "Revision": "rev level 2.1",
+                            "SpecificErrors": "Failure reason new3"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

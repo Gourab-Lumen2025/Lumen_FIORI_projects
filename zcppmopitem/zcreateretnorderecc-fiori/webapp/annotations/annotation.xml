@@ -1,0 +1,58 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+<edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+<edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common" />
+</edmx:Reference>
+<edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+<edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI" />
+</edmx:Reference>
+<edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Communication.xml">
+<edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication" />
+</edmx:Reference>
+<edmx:Reference Uri="/sap/opu/odata4/sap/zotc_sb_retord_wrt_oraord/srvd/sap/zotc_sd_retord_wrt_oraord/0001/$metadata">
+<edmx:Include Namespace="com.sap.gateway.srvd.zotc_sd_retord_wrt_oraord.v0001" Alias="SAP__self" />
+</edmx:Reference>
+<edmx:DataServices>
+<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+    <Annotations Target="SAP__self.ZCDS_RETORD_WRT_ORAORDType">
+        <Annotation Term="Common.SideEffects">
+            <Record>
+                    <PropertyValue Property="SourceProperties">
+                        <Collection>
+                            <PropertyPath>wasitinstalled</PropertyPath>
+                        </Collection>
+                    </PropertyValue>
+                    <PropertyValue Property="TargetProperties">
+                        <Collection>
+                            <PropertyPath>FACTORYPACKOK</PropertyPath>
+                            <PropertyPath>__FieldControl/FACTORYPACKOK</PropertyPath>
+                            <PropertyPath>ITEMREMFRBAG</PropertyPath>
+                            <PropertyPath>__FieldControl/ITEMREMFRBAG</PropertyPath>
+                        </Collection>
+                </PropertyValue>
+            </Record>
+        </Annotation>
+        <Annotation Term="Common.SideEffects" Qualifier="MATERIALADDRLOC">
+            <Record>
+                <PropertyValue Property="SourceProperties">
+                    <Collection>
+                        <PropertyPath>MATERIALADDRLOC</PropertyPath>
+                    </Collection>
+                </PropertyValue>
+                <PropertyValue Property="TargetProperties">
+                    <Collection>
+                        <PropertyPath>MATNEWADDRESS</PropertyPath>
+                        <PropertyPath>MATNEWCITY</PropertyPath>
+                        <PropertyPath>MATNEWSTATE</PropertyPath>
+                        <PropertyPath>MATNEWZIP</PropertyPath>
+                        <PropertyPath>__FieldControl/MATNEWADDRESS</PropertyPath>
+                        <PropertyPath>__FieldControl/MATNEWCITY</PropertyPath>
+                        <PropertyPath>__FieldControl/MATNEWSTATE</PropertyPath>
+                        <PropertyPath>__FieldControl/MATNEWZIP</PropertyPath>
+                    </Collection>
+                </PropertyValue>
+            </Record>
+        </Annotation>
+    </Annotations>
+</Schema>
+</edmx:DataServices>
+</edmx:Edmx>

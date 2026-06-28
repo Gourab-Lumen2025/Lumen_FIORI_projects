@@ -1,0 +1,29 @@
+{
+  "generationParameters": {
+    "generationDate": "Mon Nov 03 2025 08:22:12 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "SAP System (ABAP On-Premise)",
+    "metadataFilename": "",
+    "serviceUrl": "http://ns2wd1app1.saperp.corp.intranet:44301/sap/opu/odata4/sap/zmtd_whu_tbl_ui_v4/srvd/sap/zmtd_whu_tbl_ui/0001/",
+    "appName": "zhutestproject",
+    "appTitle": "HU-Test Project",
+    "appDescription": "An SAP Fiori application.",
+    "appNamespace": "com.lumen",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.108.31",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.19.1",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "WHU_TBL"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

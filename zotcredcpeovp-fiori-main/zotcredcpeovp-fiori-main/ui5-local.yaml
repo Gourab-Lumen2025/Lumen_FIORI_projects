@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: lumen.zotcredcpeovp
+type: application
+framework:
+  name: SAPUI5
+  version: 1.108.28
+  libraries:
+    - name: sap.m
+    - name: sap.ui.core
+    - name: sap.ushell
+    - name: sap.f
+    - name: sap.ui.comp
+    - name: sap.ui.generic.app
+    - name: sap.suite.ui.generic.template
+    - name: sap.ovp
+    - name: sap.ui.rta
+    - name: sap.ui.layout
+    - name: themelib_sap_horizon
+server:
+  customMiddleware:
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: lumen.zotcredcpeovp
+        ui5Theme: sap_horizon
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        backend:
+          - path: /sap
+            url: http://ns2wd1app1.saperp.corp.intranet:44301/
+            client: '200'
+            destination: BAS_S1D_200
+    - name: sap-fe-mockserver
+      beforeMiddleware: csp
+      configuration:
+        mountPath: /
+        services:
+          - urlPath: /sap/opu/odata/sap/ZZ1_CPE_ORDERMGMT_Q1_CDS
+            metadataPath: ./webapp/localService/mainService/metadata.xml
+            mockdataPath: ./webapp/localService/mainService/data
+            generateMockData: true
+        annotations:
+          - localPath: ./webapp/localService/mainService/ZZ1_CPE_ORDERMGMT_Q1_CDS_VAN.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='ZZ1_CPE_ORDERMGMT_Q1_CDS_VAN',Version='0001')/$value/
+          - localPath: ./webapp/localService/mainService/001DD80896341EEFBD8585DBA3654532.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBD8585DBA3654532',Version='0001')/$value/
+          - localPath: ./webapp/localService/mainService/001DD80896341EEFBFB42C7FB405C532.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBFB42C7FB405C532',Version='0001')/$value/
+          - localPath: ./webapp/localService/mainService/001DD80896341EEFBFB4AE3A05F08532.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBFB4AE3A05F08532',Version='0001')/$value/
+          - localPath: ./webapp/localService/mainService/001DD80AB84A1EEFBFB56397F455C4BD.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80AB84A1EEFBFB56397F455C4BD',Version='0001')/$value/
+          - localPath: ./webapp/localService/mainService/001DD80896341EEFBFB59F4BC651A532.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBFB59F4BC651A532',Version='0001')/$value/
+          - localPath: ./webapp/localService/mainService/001DD80896341EEFBFB5C40DD83A2532.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341EEFBFB5C40DD83A2532',Version='0001')/$value/
+          - localPath: ./webapp/localService/mainService/001DD80AB84A1EEFBFB5F0AB3BCC64BD.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80AB84A1EEFBFB5F0AB3BCC64BD',Version='0001')/$value/
+          - localPath: ./webapp/localService/mainService/001DD80896341FE080E339DFC09BC533.xml
+            urlPath: /sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Annotations(TechnicalName='001DD80896341FE080E339DFC09BC533',Version='0001')/$value/

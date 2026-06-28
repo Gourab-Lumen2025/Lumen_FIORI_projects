@@ -1,0 +1,24 @@
+{
+  "generationParameters": {
+    "generationDate": "Fri Nov 21 2025 11:07:45 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "SAP System (ABAP On-Premise)",
+    "metadataFilename": "",
+    "serviceUrl": "http://ns2wd1app1.saperp.corp.intranet:44301/sap/opu/odata/sap/ZTIC_CPPMOPITEM_POC_V2_CDS",
+    "appName": "zcppmopitem",
+    "appTitle": "PoC Cube View on Project Item Detail V2",
+    "appDescription": "PoC Cube View on Project Item Detail V2 An SAP Fiori application.",
+    "appNamespace": "com.lumen",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.108.48",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.19.1",
+    "template": "Basic V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}
